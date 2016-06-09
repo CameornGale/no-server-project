@@ -1,0 +1,30 @@
+<button class="button" type="button" ng-click=" showRules = !showRules">Rules</button>
+<section class="message-box">
+<p class="rules" ng-show="showRules">
+{{rules}}
+</p>
+
+<section class="rules result" ng-show="anyResults">
+<p>
+  {{message}}
+</p>
+</section>
+</section>
+<section class="cointoss-holder">
+
+
+
+<ui-view></ui-view>
+<!-- <section class="cointossimg" >
+
+  <img ng-show="headsResult" src="img/landedHeads.png" alt="heads" />
+  <img ng-show="tailsResult" src="img/landedTails.png" alt="tails" />
+</section> -->
+<section class="cointoss-buttons">
+  <button ng-click="heads()" class="button" type="button" name="button">Heads</button>
+  <button ng-click="tails()" class="button" type="button" name="button">Tails</button>
+  <button ui-sref="flipping" ng-click="reset()" class="button" type="button" name="button">flip again</button>
+</section>
+
+
+</section>

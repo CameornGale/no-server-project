@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P|VT323|Geo' rel='stylesheet' type='text/css'>
+    <title>BLIPS AND CHITZ</title>
+  </head>
+  <body>
+      <!-- <h1 class="title">BLITZ AND CHIPS</h1> -->
+      <img class="title" src="/img/title.gif" alt="" />
+      <hr>
+      <section class="page-views">
+        <ui-view></ui-view>
+      </section>
+
+      <hr>
+      <section class="foot">
+        <button class="foot-links button" ui-sref="home">home</button>
+        <button class="foot-links button" ui-sref="contact">contact us</button>
+      </section>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/gameCrtl.js"></script>
+    <script src="/js/topMenu.js"></script>
+    <script src="/js/gameRulesService.js"></script>
+    <script src="/js/hoverShow.js"></script>
+    <script src="/js/ticTacControl.js"></script>
+    <script src="/js/ticTacService.js"></script>
+    <script src="/js/cointossCtrl.js"></script>
+    <script src="/js/cointossService.js"></script>
+
+    <script src="/js/eightballService.js"></script>
+    <script src="/js/eightballCrtl.js"></script>
+    <script src="/js/rouletteService.js"></script>
+    <script src="/js/rouletteCtrl.js"></script>
+    <script src="/js/sudokuService.js"></script>
+    <script src="/js/sudokuCtrl.js"></script>
+  </body>
+</html>

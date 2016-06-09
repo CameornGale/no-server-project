@@ -1,0 +1,66 @@
+<button class="button" type="button" ng-click=" showRules = !showRules">Rules</button>
+<button  class="button" type="button" name="button" ng-click="reset()">Reset</button>
+<button  class="button" type="button" name="button" ng-disabled="sober" ng-click="turnOnSoberAI()">Enable HAL 9000</button>
+
+<section class="message-box">
+
+  <p class="rules" ng-show="showRules">
+  {{rules}}
+  </p>
+  <section class="rules result" ng-show="anyResults">
+  <p>
+    {{message}}
+  </p>
+    Do you want to play again? <button class="button"type="button" ng-click="reset()" name="button">Restart</button>
+  </section>
+
+<!-- <p id="id1">
+  Tic Tac Toe
+</p>
+<button type="button" ng-click="move()" value="move">move</button> -->
+
+</section>
+<!-- <section class="stats">
+
+</section> -->
+
+<section class="ticTacToe-holder">
+  <section class="row r1">
+    <section class="cell A">
+      <button class="ttt-button"  name="cellA" type="button" ng-disabled="isDisableda1" ng-click="placeToken('a1')">{{a1}}</button>
+      <!-- <span class="X" ng-show = "xShow">X</span> -->
+      <!-- <span class="O"ng-show = false;>O</span> -->
+    </section>
+    <section class="cell B">
+      <button class="ttt-button"  name="cellA" type="button" ng-disabled="isDisableda2" ng-click="placeToken('a2')">{{a2}}</button>
+    </section>
+    <section class="cell C">
+      <button class="ttt-button"  name="cellA" type="button" ng-disabled="isDisableda3" ng-click="placeToken('a3')">{{a3}}</button>
+    </section>
+
+  </section>
+  <section class="row r2">
+    <section class="cell D">
+      <button class="ttt-button"  name="cellA" type="button" ng-disabled="isDisabledb1" ng-click="placeToken('b1')">{{b1}}</button>
+    </section>
+    <section class="cell E">
+      <button class="ttt-button"  name="cellA" type="button" ng-disabled="isDisabledb2" ng-click="placeToken('b2')">{{b2}}</button>
+    </section>
+    <section class="cell F">
+      <button class="ttt-button"  name="cellA" type="button" ng-disabled="isDisabledb3" ng-click="placeToken('b3')">{{b3}}</button>
+    </section>
+
+  </section>
+  <section class="row r3">
+    <section class="cell G">
+      <button class="ttt-button"  name="cellA" type="button" ng-disabled="isDisabledc1" ng-click="placeToken('c1')">{{c1}}</button>
+    </section>
+    <section class="cell H">
+      <button class="ttt-button"  name="cellA" type="button" ng-disabled="isDisabledc2" ng-click="placeToken('c2')">{{c2}}</button>
+    </section>
+    <section class="cell I">
+      <button class="ttt-button"  name="cellA" type="button" ng-disabled="isDisabledc3" ng-click="placeToken('c3')">{{c3}}</button>
+    </section>
+
+  </section>
+</section>

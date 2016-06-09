@@ -1,0 +1,20 @@
+<button class="button" type="button" ng-click=" showRules = !showRules">Rules</button>
+<section class="message-box">
+<p class="rules" ng-show="showRules">
+{{rules}}
+</p>
+
+<section class="rules result" ng-show="anyResults">
+<p>
+  {{message}}
+</p>
+</section>
+</section>
+<section class="eightball-holder">
+<ui-view></ui-view>
+</section>
+<section>
+  <input class="ask8" ng-model="question" type="text" name="name" value="ask your question here">
+  <button ng-click="shake(question)" class="button" type="button" name="button">Shake</button>
+  <button ng-click="reset()" class="button" type="button" name="button">Shake Again?</button>
+</section>

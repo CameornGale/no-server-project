@@ -1,0 +1,332 @@
+body{
+
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #231F2B;
+  /*#4C4D4A*/
+}
+hr {
+  visibility: hidden;
+}
+.title {
+  /*padding: 32px;*/
+  /*border-bottom: solid black 2px;*/
+
+}
+.page-views{
+      background: #2C2F44;
+      text-align: center;
+
+}
+.message-box {
+  width: 80%;
+    margin-left: 10%;
+  text-align: center;
+  background: #B0F8F5;
+    font-family: 'VT323';
+}
+
+
+
+.rules {
+  padding: 5px;
+    /*font-family: 'Orbitron';
+
+    font-family: 'Electrolize', sans-serif;
+
+    font-family: 'Monoton', cursive;
+
+    font-family: 'Press Start 2P', cursive;*/
+
+    font-family: 'VT323';
+    background: #B0F8F5;
+
+    /*font-family: 'Geo', sans-serif;
+
+    font-family: 'Monofett', cursive;*/
+
+
+  width: 100%;
+
+}
+
+.result {
+  font-size: 150%;
+}
+
+.foot{
+  width: 100%;
+  margin: 10px;
+  /*height: 6vh;*/
+  /*position: absolute;
+  bottom: 0;*/
+  display: flex;
+  justify-content: space-around;;
+  /*align-items: center;*/
+}
+.foot-links {
+  /*height: 10px;*/
+}
+
+.game-container{
+  float: left;
+  margin: 10px;
+  margin-left: 8vw;
+  width: 35%;
+  height: 30vh;
+  border-radius: 5px;
+  border: solid  #FBFDEA 2px;
+  box-shadow: 0 0 10px #65F7F1 , 0 0 20px #65F7F1, 0 0 30px #65F7F1, 0 0 40px #65F7F1, 0 0 70px #2C2E44 , 0 0 80px #2C2E44 , 0 0 100px #2C2E44 ;
+
+
+
+}
+.game-container * {
+  visibility: hidden;
+  width: 70%;
+  /*font-family: 'VT323';*/
+  /*background: #B0F8F5;*/
+}
+.game-container img {
+  height: 80%;
+  margin: 0;
+
+}
+.ttt-img {
+  /*position: absolute;*/
+  /*top:0;
+  right: 50%;*/
+  height: 40%;
+
+
+}
+.ttt-title {
+  position: absolute;
+  top: 50%;
+}
+.hide {
+    background: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+
+  border: solid  #FBFDEA 2px;
+
+  box-shadow: 0 0 10px #65F7F1 , 0 0 20px #65F7F1, 0 0 30px #65F7F1, 0 0 40px #65F7F1, 0 0 70px #2C2E44 , 0 0 80px #2C2E44 , 0 0 100px #2C2E44 ;
+
+}
+.hide * {
+
+  visibility: inherit;
+}
+
+button{
+  /*background: rgba(158, 158, 158, 0.4);*/
+  background: #C0312B;
+  border-color: #40100E;
+
+
+}
+.button {
+    /*font-family: 'Electrolize', sans-serif;*/
+      font-family: 'Geo', sans-serif;
+      font-size: 24px;
+  /*font-family: 'Orbitron', sans-serif;*/
+    /*font-family: 'Press Start 2P', cursive;*/
+    border-radius: 5px;
+}
+
+.discripButton{
+  /*margin: 3em;*/
+  /*position: absolute;
+  bottom: 0;
+  right: 50%;*/
+}
+
+
+
+.ticTac {
+  background: url("/img/tttbckgrnd.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.eightball {
+  background: url("/img/magicEightball.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+.roy{
+  background: url("/img/roy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.roy img {
+  height: 100%;
+  width: 100%;
+}
+
+.sodoku{
+  background: url("/img/Sudoku.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;}
+
+.roulette{
+  background: url("/img/russianRoulette.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.roulette img {
+    width 100%;
+  }
+
+.callIt{
+  background: url("/img/cointoss.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;}
+
+.ticTacToe-holder{
+  /*border: solid black 5px;*/
+  padding: 20px;
+  height: 80vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+  height: 25vh;
+  width: 60vw;
+  margin: 0;
+  margin-left: 20%;
+
+}
+.cell {
+  float: left;
+  height: 100%;
+  width: 32%;
+  border: solid black 2.5px;
+}
+
+.ttt-button {
+  /*background: rgba(158, 158, 158, 0);*/
+  background: #65F7F1;
+  height: 100%;
+  width: 100%;
+  font-size: 20vh;
+  border: 0;
+
+}
+
+.ttt-button:disabled{
+  color: black;
+
+}
+
+.contact {
+  height: 50vh;
+width: 80%;
+margin-left: 10%;
+}
+
+h1, h4 {
+
+   /*text-transform: uppercase;*/
+    color: #FBFDEA;
+    /*color: #F7B5D3;*/
+    font: normal 48px/normal 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px  #F7B5D3 , 0 0 20px  #F7B5D3, 0 0 30px  #F7B5D3, 0 0 40px #F7B5D3 , 0 0 70px #2C2E44 , 0 0 80px #2C2E44 , 0 0 100px #2C2E44 ;
+    font-family: 'Orbitron';
+}
+.cointoss-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cointossimg {
+
+  height: 30vh;
+  width: 400em;
+  background: url('img/coinFlipping.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.bob {
+
+  height: 30vh;
+  width: 400em;
+  background: url('img/landedHeads.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.joe {
+
+  height: 30vh;
+  width: 400em;
+  background: url('img/landedTails.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+.ask8 {
+  font-size: 24px;
+  font-family: 'Geo', sans-serif;
+}
+.hidden{
+  display: none;
+}
+.magic8ball-container{
+  height: 30vh;
+  width: 400em;
+  background: url('img/magic8ballweb.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.eightball-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text-roulette {
+  text-align: center;
+  background: #B0F8F5;
+  font-family: 'VT323';
+  /*width: 35%;*/
+  font-size: 24px;
+}
+
+.rulesAdjust {
+  width: 98%
+}
+
+.white{
+  background: #2C2F44;
+}

@@ -1,0 +1,13 @@
+<button class="button" type="button" ng-click=" showRules = !showRules">Rules</button>
+<section class="message-box white">
+  <p class="rules rulesAdjust" ng-show="showRules">
+  {{rules}}
+  </p>
+<img src="img/rouletteGun.jpg" alt="" />
+<p class="text-roulette">
+  pick the number of bullets you want in the chamber
+  <br>{{consequence}}
+</p>
+<input ng-model="bullets"class="button" type="number" name="name" min="1" max="6" value="">
+<button ng-click='fire(bullets)'class="button" type="button" name="button">Fire!</button>
+</section>
